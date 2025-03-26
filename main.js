@@ -2,7 +2,7 @@ const form = document.getElementById('appointment-form');
 const appointmentsList = document.getElementById('appointments-list');
 
 // Tu número de WhatsApp (con 52 y sin espacios)
-'521234567890';
+'527293108476';
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
