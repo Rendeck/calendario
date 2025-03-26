@@ -1,8 +1,8 @@
 const form = document.getElementById('appointment-form');
 const appointmentsList = document.getElementById('appointments-list');
 
-// Tu número de WhatsApp (con 52 y sin espacios)
-const adminPhone = '527293108476';
+// Número de teléfono del administrador (con lada del país)
+const adminPhone = '527293108476';  // Cambia por tu número de teléfono
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -13,7 +13,7 @@ form.addEventListener('submit', function (e) {
   const date = document.getElementById('date').value;
   const time = document.getElementById('time').value;
 
-  // Registrar en la tabla
+  // Registrar la cita en la tabla
   const row = document.createElement('tr');
   row.innerHTML = `
     <td>${name}</td>
@@ -28,6 +28,7 @@ form.addEventListener('submit', function (e) {
   // Notificar al administrador por WhatsApp
   sendToAdmin(name, phone, reason, date, time);
 
+  // Limpiar el formulario
   form.reset();
 });
 
