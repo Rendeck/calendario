@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda de Citas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a href="https://wa.me/5215612345678?text=Hola%20Carlos,%20te%20confirmamos%20tu%20cita%20para%20el%20jueves%2028%20de%20marzo%20a%20las%204%20pm.%20¡Gracias%20por%20elegirnos!"
+   target="_blank"
+   style="background-color:#25D366; color:white; padding:12px 25px; border-radius:30px; text-decoration:none; font-size:18px;">
+   📲 Confirmar Cita por WhatsApp
+</a>
+
+  <h1>Agenda de Citas</h1>
+
+  <form id="appointment-form">
+    <input type="text" id="name" placeholder="Nombre del Paciente" required>
+    <input type="tel" id="phone" placeholder="Teléfono (10 dígitos)" required>
+    <input type="text" id="reason" placeholder="Motivo de la Cita" required>
+    <input type="date" id="date" required>
+    <input type="time" id="time" required>
+    <button type="submit">Agendar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Paciente</th>
+        <th>Teléfono</th>
+        <th>Motivo</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>WhatsApp</th>
+      </tr>
+    </thead>
+    <tbody id="appointments-list"></tbody>
+  </table>
+
+  <script src="./main.js"></script>
+</body>
+</html>
